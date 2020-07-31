@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8ve-Us-Vlg">
-                                <rect key="frame" x="15" y="63.999999999999972" width="384" height="480.33333333333326"/>
+                                <rect key="frame" x="15" y="64" width="384" height="544.33333333333337"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rk6-Y2-SUw">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="20.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rk6-Y2-SUw">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="egg-yJ-3Ke">
-                                        <rect key="frame" x="0.0" y="108.33333333333337" width="320" height="320"/>
+                                        <rect key="frame" x="0.0" y="108.33333333333337" width="384" height="384"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="egg-yJ-3Ke" secondAttribute="height" multiplier="1:1" id="hMk-fr-nlQ"/>
@@ -47,7 +47,7 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UxG-66-xSb" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="436.33333333333331" width="252" height="44"/>
+                                        <rect key="frame" x="0.0" y="500.33333333333337" width="252" height="44"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="size" keyPath="starSize">
                                                 <size key="value" width="44" height="44"/>
@@ -56,7 +56,9 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="egg-yJ-3Ke" firstAttribute="centerX" secondItem="8ve-Us-Vlg" secondAttribute="centerX" id="GD6-28-4V1"/>
                                     <constraint firstAttribute="trailing" secondItem="Wi2-ev-hGB" secondAttribute="trailing" id="Pug-v2-BNU"/>
+                                    <constraint firstItem="Rk6-Y2-SUw" firstAttribute="centerX" secondItem="8ve-Us-Vlg" secondAttribute="centerX" id="gni-B6-q4A"/>
                                 </constraints>
                             </stackView>
                         </subviews>
